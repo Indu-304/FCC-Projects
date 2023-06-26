@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><em>Thank you for taking your time to fill this Survey Form</em></p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+            <fieldset>
+                <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name"
+                        required /></label>
+                <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email"
+                        required /></label>
+                <label id="number-label" for="number">Age <input id="number" type="number" min=13 max=100
+                        placeholder="Enter your age" required /></label>
+                <label for="dropdown">Which option best describes your current role?
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Part-time Job</option>
+                        <option value="3">Full-time Job</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label>Would you recommend freeCodeCamp to a friend?</label>
+                <label for="definitely"><input id="definitely" type="radio" name="recc" value="def" class="inline"
+                        checked />Definitely</label>
+                <label for="maybe"><input id="maybe" type="radio" name="recc" value="maybe"
+                        class="inline" />Maybe</label>
+                <label for="notsure"><input id="notsure" type="radio" name="recc" value="notsure" class="inline" />Not
+                    sure</label>
+
+                <label>What would you like to see improved?</label>
+                <label for="front"><input id="front" type="checkbox" value="front-end" class="inline">Front-end
+                    Projects </label>
+                <label for="back"><input id="back" type="checkbox" value="back-end" class="inline">Back-end
+                    Projects</label>
+                <label for="data-visualization"><input id="data-visualization" type="checkbox"
+                        value="data-visualization" class="inline">Data Visualization</label>
+                <label for="challenges"><input id="challenges" type="checkbox" value="challenges" class="inline">Challenges</label>
+
+                <label for="comm">Any commments or suggestions? <textarea id="comm" rows=3 cols=30
+                        placeholder="Enter your comments here..." /></textarea></label>
+            </fieldset>
+            <input id="submit" type="submit" />
+        </form> 
+        <p>&nbsp;</p>
+    </main>
+</body>
+
+</html>
